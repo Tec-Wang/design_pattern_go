@@ -4,8 +4,6 @@ import (
 	ifactory "design/wangzheng/go/abstractfactory/ifactory"
 	builder "design/wangzheng/go/builder"
 	housebuilder "design/wangzheng/go/builder/builder"
-	"runtime"
-
 	factory "design/wangzheng/go/factory"
 	"fmt"
 )
@@ -14,19 +12,9 @@ func main() {
 	// factory
 	// factory_test()
 	// test_absFactory()
-	test_bulder()
+	// test_bulder()
 
-	// 纯纯测试代码
-	// 数组是值类型
-	ints := [...]int{1, 2, 3}
-	a := ints
-	a[0] = 222
-	fmt.Println(a)
-	fmt.Println(ints)
-}
-
-func String2Bytes(s string) []byte {
-	runtime.SetFinalizer()
+	// 从这里开始 就是用go test函数进行测试了
 }
 
 func factory_test() {
